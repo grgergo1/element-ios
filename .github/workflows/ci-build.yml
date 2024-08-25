@@ -55,3 +55,9 @@ jobs:
       # Main step
       - name: Build iOS simulator
         run: bundle exec fastlane build
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          path: .
+          
